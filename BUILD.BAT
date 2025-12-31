@@ -1,0 +1,10 @@
+@echo off
+
+if not exist BUILDINC.EXE TPC BUILDINC.PAS
+
+BUILDINC
+
+if exist MATRIX.EXE del MATRIX.EXE
+
+TPC MATRIX.PAS
+
